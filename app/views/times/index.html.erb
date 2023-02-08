@@ -1,1 +1,10 @@
-<%= 'トップページ' %>
+<%= 'タイマー' %>
+<%= audio_tag("sound.mp3",id:"sound") %>
+<div class='main'>
+  <%= form_tag name:"timer", id:"timerform" do %>
+    <input type="text" value="" id="min" class="min"><span>分</span>
+    <input type="text" value="" id="sec" class="sec"><span>秒</span><br>
+    <input type="button" value="スタート" id="start" class="button" onclick="CountStart()" >
+    <input type="button" value="ストップ" id="stop" class="button" onclick="CountStop()" >
+  <% end %>
+</div>
