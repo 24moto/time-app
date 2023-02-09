@@ -1,10 +1,33 @@
-<%= 'タイマー' %>
+<%= render "shared/header" %>
+
 <%= audio_tag("sound.mp3",id:"sound") %>
+
 <div class='main'>
-  <%= form_tag name:"timer", id:"timerform" do %>
-    <input type="text" value="" id="min" class="min"><span>分</span>
-    <input type="text" value="" id="sec" class="sec"><span>秒</span><br>
-    <input type="button" value="スタート" id="start" class="button" onclick="CountStart()" >
-    <input type="button" value="ストップ" id="stop" class="button" onclick="CountStop()" >
-  <% end %>
+  
+  <div class='sub'>
+
+    <div class='title'>
+        <%= image_tag "logo.png", class:"logo" %>
+    </div>
+
+    <div class='form'>
+      <%= form_tag name:"timer", id:"timerform" do %>
+        <div class='time'>
+          <input type="text" value="" id="min" class="min" placeholder="00"><span>：</span>
+          <input type="text" value="" id="sec" class="sec" placeholder="00"><br>
+        </div>
+        <div class='buttons'>
+          <input type="button" value="START" id="start" class="button" onclick="CountStart()">
+          <input type="button" value="STOP" id="stop" class="button" onclick="CountStop()">
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+
 </div>
+
+<%= link_to("#", class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>記録する</span>
+  <%= image_tag 'memo.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
