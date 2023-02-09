@@ -1,0 +1,127 @@
+a {
+  text-decoration: none;
+}
+
+.main{
+  width: 100vW;
+  min-width: 800px;
+  height: calc(100vh - 2vh - 1vh - 32px - 1vh - 2vh);
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub{
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  /* padding-bottom: 70px; */
+  border-radius: 50%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-direction:column */
+}
+
+.title{
+  padding-top: 30px;
+  width: 100%;
+  height: 120px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 172px;
+  height: 78px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.time {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid #95B2BA;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.min{
+  width: 25%;
+  /* margin-top: 5px; */
+  height: 100px;
+  /* padding: 10px 16px 8px; */
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: #fff;
+  font-size: 100px;
+  resize: none;
+  text-align: center;
+}
+
+span{
+  /* margin: 0 1px; */
+  color: #000;
+  font-size: 65px;
+}
+
+.sec{
+  width: 25%;
+  /* margin-top: 5px; */
+  height: 100px;
+  /* padding: 10px 16px 8px; */
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: #fff;
+  font-size: 100px;
+  resize: none;
+  text-align: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  width: 30%;
+  /* background: #95B2BA; */
+  background: #E8B5A2;
+  /* border: 1px solid #95B2BA; */
+  border: 1px solid #E8B5A2;
+  border-radius: 30px;
+  color: #fff;
+  line-height: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  /* font-family: "M PLUS 1p"; */
+  font-family: 'Rajdhani', sans-serif;
+}
+
+:disabled {
+  width: 30%;
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 30px;
+  color: #fff;
+  line-height: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  opacity: 1;
+  font-family: 'Rajdhani', sans-serif;
+}
+
