@@ -1,0 +1,68 @@
+.registrations-main {
+  width: 100vW;
+  min-width: 800px;
+  height: 100vh;
+  background-color: #95B2BA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrations-sub {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column
+}
+
+.registrations-title{
+  width: 100%;
+  height: 78px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registrations-logo {
+  width: 172px;
+  height: 78px;
+}
+
+.field{
+  margin-bottom: 15px;
+
+}
+
+.input-default {
+  width: 100%;
+  /* margin-top: 5px; */
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+  font-family: "M PLUS 1p"; 
+}
+
+.actions{
+  text-align: center;
+  width: 70%;
+  margin: 30px auto 0;
+}
+
+.register-btn {
+  width: 100%;
+  border-radius: 4px;
+  background: #E8B5A2;
+  border: 1px solid #E8B5A2;
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "M PLUS 1p"; 
+}
