@@ -1,0 +1,26 @@
+<div class='sessions-main'>
+
+  <div class='sessions-sub'>
+
+    <div class='sessions-title'>
+        <%= link_to image_tag("logo.png", class:"sessions-logo"), "/" %>
+    </div>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: " メールアドレス", class:"input-default" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "current-password", placeholder: " パスワード", class:"input-default"  %>
+      </div>
+
+      <div class="sessions-actions">
+        <%= f.submit "ログイン", class:"sessions-btn" %>
+      </div>
+
+    <% end %>
+
+    
+  </div>
+</div>
