@@ -69,6 +69,8 @@ https://time-app.onrender.com
 
 % rails db:migrate
 
+% rails s
+
 
 # 工夫したポイント
 カウントダウン機能自体は、ユーザー登録しなくても使用できるものとなっている。
