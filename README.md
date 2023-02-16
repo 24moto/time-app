@@ -35,6 +35,7 @@ https://time-app.onrender.com
 
 # 実装した機能についての画像やGIFおよびその説明
 中央のフォームに測りたい時間を入力しスタートボタンを押すとカウントダウンが始まる。終了時は、アラームが鳴り時間がリセットされる。
+
 [![Image from Gyazo](https://i.gyazo.com/cc681d88943d18366f44c7e6dc14bc0c.gif)](https://gyazo.com/cc681d88943d18366f44c7e6dc14bc0c)
 
 # 実装予定の機能
