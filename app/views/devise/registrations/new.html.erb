@@ -9,11 +9,11 @@
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
-        <%= f.text_field :nickname, placeholder: " ニックネーム", class:"input-default" %>
+        <%= f.text_field :nickname, autofocus: true, placeholder: " ニックネーム", class:"input-default" %>
       </div>  
 
       <div class="field">
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: " メールアドレス", class:"input-default" %>
+        <%= f.email_field :email, autocomplete: "email", placeholder: " メールアドレス", class:"input-default" %>
       </div>
 
       <div class="field">

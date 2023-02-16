@@ -1,0 +1,4 @@
+<p><%= @nickname %>さんの記録一覧</p>
+<% @records.each do |record| %>
+  <%= link_to record.date, record_path(record.id) %>
+<% end %>

@@ -1,0 +1,28 @@
+<div class="contents row">
+  <div class="container">
+    <h3>記録する</h3>
+    <%= form_with(model: @record, local: true) do |form| %>
+      <div class='form-date'>
+        <span class=form-label>date:</span><%= form.date_field :date %>
+      </div>
+      <div class='form-goal'>
+        <%= form.text_area :goal, placeholder: "例)英語がんばる！" %>
+      </div>
+      <div class='form-title'>
+        <%= form.text_field :title, placeholder: "例)英語" %>
+      </div>
+      <div class='form-title_detail'>
+        <%= form.text_field :title_detail, placeholder: "例)英単語帳 p10~p15" %>
+      </div>
+      <div class='form-total_time'>
+        <%= form.time_select :total_time %>
+      </div>
+      <div class='form-note'>
+        <%= form.text_area :note, placeholder: "例)今日も楽しかった！" %>
+      </div>
+      <div class='record-btn'>
+        <%= form.submit "記録" %>
+      </div>
+    <% end %>
+  </div>
+</div>
