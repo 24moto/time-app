@@ -1,4 +1,23 @@
-<p><%= @nickname %>さんの記録一覧</p>
-<% @records.each do |record| %>
-  <%= link_to record.date, record_path(record.id) %>
+<div class='new-page-header'>
+    <div class='center-logo'>
+      <%= link_to image_tag("logo.png", class:"logo"), "/" %>
+    </div>
+</div>
+
+<div class="contents-user-show">
+  <div class="user-title"><%= @nickname %>さんの記録一覧</div>
+
+      <% @records.each do |record| %>
+        <div class="user-content">
+          <%= link_to record.date, record_path(record.id) %>
+          <%= link_to record.total_time.strftime("%H:%M"), record_path(record.id)%>
+        </div>
+      <% end %>
+    
+  
+</div>
+
+<%= link_to(new_record_path, class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>記録する</span>
+  <%= image_tag 'memo.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>

@@ -1,8 +1,10 @@
 <header class='my-page-header'>
   
-  <div class='nav'>
-    <div class='left-logo'>
-      <%= image_tag "logo.png", class:"logo" %>
+  <div class='my-page-nav'>
+    <div class='left-space'>
+    </div>
+    <div class='center-logo'>
+      <%= link_to image_tag("logo.png", class:"logo"), "/" %>
     </div>
     <ul class='lists-right'>
       <% if user_signed_in? %>
@@ -17,22 +19,41 @@
 
 </header>
 
+<div class="contents">
+  <div class="container">
     <h3>記録</h3>
+    <div class="record-form">
     
-      <div class='form-date'>
-        <%= @record.date %>
+      <div class="record-form-contents">
+        <label>date</label>
+        <div class='form-date'><%= @record.date %></div>
       </div>
-      <div class='form-goal'>
-        <%= @record.goal %>
+
+      <div class="record-form-contents">
+        <label>goal</label>
+        <div class='form-goal'><%= @record.goal %></div>
       </div>
-      <div class='form-title'>
-        <%= @record.title %>
+
+      <div class="record-form-contents">
+        <label>to do List</label>
+        <div class="record-form-content-1">
+          <div class='form-title'><%= @record.title %></div>
+          <div class='form-title_detail'><%= @record.title_detail %></div>
+        </div>
       </div>
-      <div class='form-title_detail'>
-        <%= @record.title_detail %>
+
+      <div class="record-form-contents">
+        <label>total time</label>
+        <div class="record-form-content-2">
+         <div class='form-total_time'><%= @record.total_time.strftime("%H:%M") %></div>
+        </div>
       </div>
-      <div class='form-total_time'>
-       <%= @record.total_time.strftime("%H:%M") %>
-      <div class='form-note'>
-        <%= @record.note %>
+
+      <div class="record-form-contents">
+        <label>note</label>
+        <div class='form-note'><%= @record.note %></div>
       </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+.new-page-header {
+  width: 100vw;
+  padding: 2vh 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-logo {
+  text-align: center;
+}
+
+.logo {
+  width: 172px;
+  height: 78px;
+}
+
+.contents {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.container {
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgb(41 41 41 / 20%);
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.record-form {
+  display: block;
+  margin-top: 0em;
+}
+
+.form-date,
+.form-goal,
+.form-total_time,
+.form-note {
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8d8;
+  border-radius: 5px;
+  font-family: "M PLUS 1p";
+}
+
+.form-title {
+  width: 30%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8d8;
+  border-radius: 5px;
+  font-family: "M PLUS 1p";
+}
+
+.form-title_detail {
+  width: 70%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8d8;
+  border-radius: 5px;
+  font-family: "M PLUS 1p";
+}
+
+
+select {
+  width: 15%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8d8;
+  border-radius: 5px;
+  font-family: "M PLUS 1p";
+  /* font-size: 30px; */
+}
+
+.record-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #95B2BA;
+  border-radius: 20px;
+  color: white;
+  border: 0;
+  font-size: 18px;
+}
+
+.label {
+  width: 30%;
+}
+
+.record-form-content-1 {
+  display: flex;
+}
+
+.record-form-content-2 {
+  font-size: 20px;
+}
+
+.record-form-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+}

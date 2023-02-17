@@ -9,7 +9,7 @@ class RecordsController < ApplicationController
     @record = Record.create(record_params)
     if @record.valid?
       @record.save
-      redirect_to root_path
+      redirect_to user_path(current_user.id)
     else
       render 'new'
     end
@@ -36,7 +36,7 @@ class RecordsController < ApplicationController
     @record = Record.find(params[:id])
     return unless @record.destroy
 
-    redirect_to root_path
+    redirect_to user_path(current_user.id)
   end
 
 

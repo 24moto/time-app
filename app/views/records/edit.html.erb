@@ -6,7 +6,7 @@
 
 <div class="contents">
   <div class="container">
-    <h3>記録する</h3>
+    <h3>更新する</h3>
     <div class="record-form">
       <%= form_with(model: @record, local: true) do |form| %>
         
@@ -40,7 +40,7 @@
             <%= form.text_area :note, placeholder: "例)今日も楽しかった！", class: 'form-note' %>
           </div>
        
-          <%= form.submit "記録" ,class: 'record-btn' %>
+          <%= form.submit "更新" ,class: 'record-btn' %>
        
       <% end %>
     </div>
