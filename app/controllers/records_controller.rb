@@ -39,9 +39,8 @@ class RecordsController < ApplicationController
     redirect_to user_path(current_user.id)
   end
 
-
-
   private
+
   def record_params
     params.require(:record).permit(:title, :title_detail, :total_time, :goal, :note, :date).merge(user_id: current_user.id)
   end
